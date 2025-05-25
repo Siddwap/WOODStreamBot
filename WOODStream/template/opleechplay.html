@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/script.js"></script>
 
 </head>
 
@@ -87,15 +88,9 @@
             event.preventDefault();
         });
     });
-
-    function p_player(){
-        const urlInput = "{{file_url}}";
-        const playItUrl = "playit://playerv2/video?url=" + urlInput;
-                window.location.href = playItUrl;
-    }
 </script>
     <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-    <script src="https://my-hero-op.github.io/Resources/data/src/script.js"></script>
+    <script src="/script.js"></script>
 
 </html>
