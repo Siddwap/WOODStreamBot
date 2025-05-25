@@ -55,6 +55,9 @@
                     <button class="magnet" onclick="n_player()">
                         <img style="height: 40px;" src="https://i.ibb.co/pRC8RMg/N-plyer.png" alt=""> nPlayer
                     </button>
+                    <button class="magnet" onclick="p_player()">
+                        <img style="height: 40px;" src="https://github.com/Siddwap/Video-storage-test-august2023/releases/download/v1.0.0/bWl6ZQ.png" alt=""> PlayIt Player
+                    </button>
                 </div>
 
             </div>
@@ -84,6 +87,12 @@
             event.preventDefault();
         });
     });
+
+    function p_player(){
+        const urlInput = "{{file_url}}";
+        const playItUrl = "playit://playerv2/video?url=" + urlInput;
+                window.location.href = playItUrl;
+    }
 </script>
     <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
